@@ -16,7 +16,7 @@ This is a terraform knowledge base repository
   docker run -i -t hashicorp/terraform:latest plan
   docker run -i -t -v $(pwd):$(pwd) -w $(pwd) hashicorp/terraform:latest plan
 -trigger plan command on terraform image, passing variables via command line
-  docker run -i -t -v $(pwd):$(pwd) -w $(pwd) hashicorp/terraform:latest plan -var='username="<USER_NAME>"' -var='password="<PASSWORD>"'
+  docker run -i -t -v $(pwd):$(pwd) -w $(pwd) hashicorp/terraform:latest plan -var 'username=<USER_NAME>' -var 'password=<PASSWORD>'
 ## Commands
 - https://spacelift.io/blog/terraform-commands-cheat-sheet
 - https://developer.hashicorp.com/terraform/cli/commands
